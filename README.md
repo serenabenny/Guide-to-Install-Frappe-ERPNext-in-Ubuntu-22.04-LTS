@@ -115,15 +115,19 @@ Now press (Ctrl-X) to exit
     bench new-site dcode.com
     
     bench use dcode.com
+    
+    bench migrate
 
 ### STEP 15 install ERPNext latest version in bench & site
 
-    bench get-app erpnext --branch version-13
-    ###OR
-    bench get-app https://github.com/frappe/erpnext --branch version-13
+    bench get-app erpnext
 
-    bench --site dcode.com install-app erpnext
+    bench install-app erpnext
+    
+    bench migrate
     
     bench start
+    
+    bench set-config developer_mode 1
 
     
